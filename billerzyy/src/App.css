@@ -1,0 +1,121 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+.App {
+  font-family: Arial, sans-serif;
+
+}
+
+.dashboard {
+  display: flex;
+}
+
+.dashboard-content {
+  margin-left: 250px;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #080d27;
+  color: white;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 1rem;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+  background-color: #1e90ff;
+}
+
+.inventory {
+  padding: 2rem;
+}
+
+.inventory input {
+  margin-right: 1rem;
+  padding: 0.5rem;
+}
+
+.inventory button {
+  padding: 0.5rem 1rem;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.inventory ul {
+  list-style: none;
+  padding: 0;
+}
+
+.inventory ul li {
+  margin-bottom: 1rem;
+}
+
+.inventory ul li button {
+  margin-left: 1rem;
+}
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}

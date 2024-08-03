@@ -1,0 +1,11 @@
+.work-in-progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  

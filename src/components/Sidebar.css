@@ -1,0 +1,37 @@
+.sidebar {
+    width: 250px;
+    background-color: #080d27; /* Dark background color */
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 4rem; /* Adjust based on Navbar height */
+    left: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar ul li a.active,
+  .sidebar ul li a:hover {
+    background-color: #1e90ff; /* Highlight color */
+  }
+  
+
+
+  

@@ -1,0 +1,104 @@
+.next-page {
+    background-color: #f3f3f3; 
+    /* background:linear-gradient(-215deg,#080d27 50%,#f7f7f8 10%) ; */
+
+    color: #333; /* Dark text color for contrast */
+    min-height: 100vh; /* Ensure the page takes full height */
+    padding: 2rem;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #2c3e50; /* Darker color for the header */
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem; /* Increased gap between cards for better spacing */
+  }
+  
+  .card {
+    width: 300px; /* Card width */
+    height: 400px; /* Card height */
+    perspective: 1000px; /* Create a 3D effect */
+    margin: 1rem;
+  
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.6s ease; /* Smooth flip animation */
+    transform-style: preserve-3d; /* Preserve 3D effect */
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg); /* Flip on hover */
+  }
+  
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back face when facing away */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-front {
+    background-color: #f9f9f9; /* Light gray background for front */
+    border: 1px solid #ddd; /* Light border for front */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .card-back {
+    background-color: #fff; /* White background for back */
+    border: 1px solid #080d27; /* Light border for back */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transform: rotateY(180deg); /* Hide the back face initially */
+  }
+  
+  .card-front img {
+    width: 100%;
+    height: 400px; /* Adjust image to fit */
+    border-radius: 12px 12px 12px 12px; /* Rounded top corners */
+  }
+
+  
+  .card-back h2  {
+ 
+    padding-left: 10px ;
+    padding-top: 1px ;
+    padding-right: 10px ;
+    padding-bottom: 1px ;
+   
+    
+    text-align: left;
+    color: #333; /* Text color for back */
+  }
+  .card-back p{
+    padding-left: 10px ;
+   
+    padding-right: 10px ;
+    font-size: 20px;
+    text-align: left;
+    color: #333;  
+  }
+  .card-back h2 {
+    font-size: 1.5rem;
+    /* margin-bottom: 0.5rem; */
+  }
+  
+  .card-back p {
+    color: #666; /* Lighter color for description */
+  }
+  
